@@ -3,11 +3,7 @@ import java.util.ArrayList;
 
 import IU.Interfaz;
 import datos.Calificaciones;
-import datos.Curso;
-import datos.Estudiante;
-import datos.Grupo;
-import datos.HorarioAlumno;
-import datos.Profesor;
+import datos.*;
 
 public class Prueba {
 	

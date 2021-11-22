@@ -3,11 +3,7 @@ package IU;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import datos.Calificaciones;
-import datos.Curso;
-import datos.Estudiante;
-import datos.EvaluacionDocente;
-import datos.HorarioAlumno;
+import datos.*;
 
 public class Interfaz {
 	
