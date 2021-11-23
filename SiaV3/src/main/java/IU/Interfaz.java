@@ -11,6 +11,11 @@ public class Interfaz {
 		System.out.println("Bienvenido al Sistema de Informacion Academica - SIA");
 	}
 	
+        public static void imprimirIngresoId() {
+                System.out.println("|*---------------------------------------*|");
+                System.out.println("Por favor ingrese su ID:");
+        }
+        
 	public static void mostrarMenu() {
 		System.out.println("|*---------------------------------------*|");
 		System.out.println("	Servicios disponibles:\n"
@@ -24,11 +29,17 @@ public class Interfaz {
 		System.out.println("\nPor favor ingrese una opcion: ");
 		
 	}
-	
-	public static int leerOpcion() {
-		Scanner sc = new Scanner(System.in);
-		int opcion = sc.nextInt();
-		return opcion;
+        
+	public static String leerOpcionStr() {
+		Scanner scs = new Scanner(System.in);
+		String opcionStr = scs.nextLine();
+                return opcionStr;
+	}
+        
+	public static int leerOpcionInt() {
+		Scanner sci = new Scanner(System.in);
+		int opcionInt = sci.nextInt();
+		return opcionInt;
 	}
 	
 	public static void imprimirEstudiante(Estudiante a) {
@@ -60,8 +71,4 @@ public class Interfaz {
 		System.out.println("Hasta pronto");
 	}
 	
-	public static void main(String[] args) {
-		Estudiante s = new Estudiante("Diego");
-		imprimirEstudiante(s);
-	}
 }
