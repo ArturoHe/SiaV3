@@ -9,7 +9,7 @@ public class Profesor {
 	private String nombre;
 	private String usuario;
 	private String departamento;
-	private int id;
+	private String id;
 	private List<Grupo> grupos;
 	
 	//Gets de atributos
@@ -26,7 +26,7 @@ public class Profesor {
 		return this.departamento;
 	}
 	
-	public int getId() {
+	public String getId() {
 		return this.id;
 	}
 	
@@ -48,7 +48,7 @@ public class Profesor {
 		this.departamento = departamento;
 	}
 	
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	
@@ -58,7 +58,7 @@ public class Profesor {
 	
 	// Constructores
 	
-	public Profesor(String nombre, String usuario, String departamento, int id, List<Grupo> grupos) {
+	public Profesor(String nombre, String usuario, String departamento, String id, List<Grupo> grupos) {
 		this.setNombre(nombre);
 		this.setUsuario(usuario);
 		this.setDepartamento(departamento);
@@ -66,20 +66,20 @@ public class Profesor {
 		this.setGrupos(grupos);		
 	}
 	
-	public Profesor(String nombre, String usuario, String departamento, int id) {
+	public Profesor(String nombre, String usuario, String departamento, String id) {
 		this(nombre,usuario,departamento,id,null);
 	}
 	
 	public Profesor(String nombre, String usuario, String departamento) {
-		this(nombre, usuario, departamento, 0, null);
+		this(nombre, usuario, departamento, "", null);
 	}
 	
 	public Profesor(String nombre, String usuario) {
-		this(nombre, usuario, null, 0, null);
+		this(nombre, usuario, null, "", null);
 	}
 	
 	public Profesor(String nombre) {
-		this(nombre, null, null, 0, null);
+		this(nombre, null, null, "", null);
 	}
 	
 	@Override
@@ -89,7 +89,7 @@ public class Profesor {
 				+"\nUsuario SIA: "+this.getUsuario()
 				+"\nDepartamento: "+this.getDepartamento()
 				+"\nID: "+this.getId()
-				+"\nGrupos a los que enseño: "+this.getGrupos();
+				+"\nGrupos a los que enseï¿½o: "+this.getGrupos();
 	}
 
 }

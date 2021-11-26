@@ -7,7 +7,7 @@ public class Estudiante {
 	
 	private String nombre;
 	private String usuario;
-	private int id;
+	private String id;
 	private int edad;
 	private String tipoSangre;
 	
@@ -21,7 +21,7 @@ public class Estudiante {
 		return this.usuario;
 	}
 	
-	public int getId() {
+	public String getId() {
 		return this.id;
 	}
 	
@@ -44,7 +44,7 @@ public class Estudiante {
 		this.usuario = usuario;
 	}
 	
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	
@@ -58,7 +58,7 @@ public class Estudiante {
 	
 	// Constructores
 	
-	public Estudiante(String nombre, String usuario, int edad, int id, String tipoSangre) {
+	public Estudiante(String nombre, String usuario, int edad, String id, String tipoSangre) {
 		this.setNombre(nombre);
 		this.setUsuario(usuario);
 		this.setEdad(edad);
@@ -66,7 +66,7 @@ public class Estudiante {
 		this.setTipoSangre(tipoSangre);
 	}
 	
-	public Estudiante(String nombre, String usuario, int edad, int id) {
+	public Estudiante(String nombre, String usuario, int edad, String id) {
 		this.setNombre(nombre);
 		this.setUsuario(usuario);
 		this.setId(id);

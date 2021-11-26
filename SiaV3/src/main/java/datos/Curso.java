@@ -6,7 +6,7 @@ public class Curso {
 	
 	private String nombre;
 	private int id;
-	private int creditos;
+	private int grado;
 	
 	// Gets de los atributos
 	
@@ -18,8 +18,8 @@ public class Curso {
 		return this.id;
 	}
 	
-	public int getCreditos() {
-		return this.creditos;
+	public int getGrado() {
+		return this.grado;
 	}
 	
 	// Sets de los atributos
@@ -32,16 +32,16 @@ public class Curso {
 		this.id = id;
 	}
 	
-	public void setCreditos(int creditos) {
-		this.creditos = creditos;
+	public void setGrado(int grado) {
+		this.grado = grado;
 	}
 	
 	// Constructores
 	
-	public Curso(String nombre, int id, int creditos) {
+	public Curso(String nombre, int id, int grado) {
 		this.setNombre(nombre);
 		this.setId(id);
-		this.setCreditos(creditos);
+		this.setGrado(grado);
 	}
 	
 	public Curso(String nombre, int id) {
@@ -58,7 +58,7 @@ public class Curso {
 	public String toString() {
 		return "\nNombre del curso: "+this.getNombre()
 				+"\nID: "+this.getId()
-				+"\nNumero de creditos: "+this.getCreditos()+"\n";
+				+"\nGrado: "+this.getGrado()+"\n";
 	}
 }
 
